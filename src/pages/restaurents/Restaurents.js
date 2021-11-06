@@ -1,15 +1,40 @@
 import React from "react";
+import { useRouteMatch } from "react-router";
+import { useGlobalLoginContext } from "../../context/LoginContext";
 import "./Restaurents.css";
 import RestHead from "./RestHead";
 
-const Restaurents = ({ location }) => {
-  const data = location.state;
+const Restaurents = () => {
+  const { rest } = useGlobalLoginContext();
+  const router = useRouteMatch();
+  const dataFrom = router.params.url;
+
+  const da = rest.map((item) => {
+    if (dataFrom === item.url) {
+      return item;
+    }
+    return undefined;
+  });
+
+  Object.keys(da).forEach(
+    (key) => da[key] === undefined && delete da[key]
+  );
+
+  let d;
+  for (let i = 0; i < da.length; i++) {
+    if (da[i]) {
+      d = da[i];
+    }
+  }
+
+  const {data} = d;
+  const {food} = data;
 
   return (
     <div>
       <RestHead />
       <div className="rest-main">
-        {data.map((b, index) => {
+        {food.map((b, index) => {
           const { type, food_item } = b;
           const type_line = (index > 0)? 'type-underline':'';
 
