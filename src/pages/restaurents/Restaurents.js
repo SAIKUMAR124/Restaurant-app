@@ -1,8 +1,8 @@
 import React from "react";
-import "./Bowl.css";
+import "./Restaurents.css";
 import RestHead from "./RestHead";
 
-const Bowl = ({ location }) => {
+const Restaurents = ({ location }) => {
   const data = location.state;
 
   return (
@@ -45,4 +45,4 @@ const Bowl = ({ location }) => {
   );
 };
 
-export default Bowl;
+export default Restaurents;

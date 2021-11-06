@@ -6,7 +6,7 @@ import PageNotFound from "./pages/PageNotFound";
 import Ahmedabad from "./pages/popular-cities/Ahmedabad";
 import Bangalore from "./pages/popular-cities/Bangalore";
 import Chennai from "./pages/popular-cities/Chennai";
-import Bowl from "./pages/restaurents/Bowl";
+import Restaurents from "./pages/restaurents/Restaurents";
 
 const MainPage = () => {
   return (
@@ -18,7 +18,7 @@ const MainPage = () => {
           <Route exact path="/ahmedabad" component={Ahmedabad} />
           <Route exact path="/bangalore" component={Bangalore} />
           <Route exact path="/Chennai" component={Chennai} />
-          <Route path="/home/:url" component={Bowl} />
+          <Route path="/home/:url" component={Restaurents} />
           
           <Route component={PageNotFound} />
         </Switch>
