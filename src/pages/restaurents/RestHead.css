@@ -63,6 +63,9 @@
 }
 
 .off{
-    font-weight: 600;
+    font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+    font-size: 14px;
+    opacity: .9;
     margin: 1rem 0;
+    font-weight: 600;
 }

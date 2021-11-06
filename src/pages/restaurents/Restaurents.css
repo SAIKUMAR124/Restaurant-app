@@ -1,7 +1,20 @@
+.Restaurent-parts{
+    display: flex;
+}
+
+.Restaurent-part1{
+    flex: 1;
+}
+
+.Restaurent-part2{
+    flex: 2;
+}
+
+.Restaurent-part3{
+    flex: 1;
+}
 
 .rest-main{
-    width: 50%;
-    margin: 0 auto;
     font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
 }
 
