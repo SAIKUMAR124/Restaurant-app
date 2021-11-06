@@ -1,11 +1,13 @@
 import React from "react";
+import { useGlobalLoginContext } from "../../../context/LoginContext";
 import { RestRetriveData } from "./RestRetriveData";
 
 const RestaurentItems = () => {
+  const {onAdd} = useGlobalLoginContext();
   const d = RestRetriveData();
   const { data } = d;
   const { food } = data;
-
+  
   return (
     <div>
       <div className="rest-main">
@@ -26,11 +28,21 @@ const RestaurentItems = () => {
 
                 const border_line = index !== l - 1 ? "food-underline" : "";
                 return (
-                  <div key={index} className="food-info">
-                    <div className="food-item-name">{item}</div>
-                    <div className="food-item-price">{price}</div>
-                    <div className="food-item-text">{item_info}</div>
-
+                  <div
+                    key={index}
+                    className="food-info"
+                    style={{
+                      display: "flex",
+                    }}
+                  >
+                    <div>
+                      <div className="food-item-name">{item}</div>
+                      <div className="food-item-price">{price}</div>
+                      <div className="food-item-text">{item_info}</div>
+                    </div>
+                    <div>
+                      <button onClick={()=> onAdd(a) } >Add to cart</button>
+                    </div>
                     <div className={border_line}></div>
                   </div>
                 );
