@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loginpage-main{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-auto-rows: minmax(550px, auto);
+}
+
+.loginpage-part1{
+    margin: 0 3.5rem;
+    margin-top: 4rem
+}
+
+.loginpage-part2{
+    background-color: aqua;
+    background-image: url('../images/Breakfast.jpg');
+    background-size: cover;
+    object-fit: cover;
+ }
+

@@ -1,0 +1,31 @@
+.footer-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: black;
+    height: 4rem;
+    padding: 0 3rem;
+    font-size: 1.5rem;
+}
+
+.swiggy-text{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.footer-pt2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    gap: 1;
+}
+
+.footer-pt2 > .icon{
+    margin-right: 5px;
+}
+
+.social > span{
+    padding: 0 1rem;
+}

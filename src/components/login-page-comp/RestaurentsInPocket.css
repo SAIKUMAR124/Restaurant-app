@@ -1,0 +1,53 @@
+.resPocket{
+    height: 460px;
+    padding: 0 3rem;
+    display: flex;
+}
+
+.resPocInfo{
+    width: 33%;
+    /* margin-top: 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.resPocInfo > p{
+    color: #7e808c;
+    font-size: 16px;
+    font-weight: 300px;
+    padding-bottom: 30px;
+}
+
+.resPocInfo > h1{
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+.google-img,
+.app-store{
+    width: 130px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.food-img1{
+    width: 304px;
+    height: 409px;
+    margin-left: 100px;
+
+}
+
+.food-img2{
+    width: 304px;
+    height: 409px;
+    margin-top: 53px;
+    
+}
+
+.pos-ab1{
+    right: 3em;
+}
+
+
+

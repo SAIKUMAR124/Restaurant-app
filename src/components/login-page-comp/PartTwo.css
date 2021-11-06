@@ -1,0 +1,50 @@
+.div1{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    justify-content: space-between;
+    gap: 5em;
+}
+.part2{
+    background-color: #2b1e16;
+    height: 400px;
+    padding: 0 2rem;
+}
+.firstpic{
+    width: 360px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.firstpic > img{
+    width: 150px;
+}
+
+
+.h3{
+    color: white;
+    font-size: 1.7rem;
+    margin: 15px 5px;
+}
+.p{
+    color: #e0cbc1;
+    font-size: 15px;
+    font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+}
+.pic1{
+    
+    text-align: center;
+    width: 360px;
+}
+
+.pic2{
+    margin-top: 5px;
+    text-align: center;
+    
+}
+
+.pic3{
+    
+    text-align: center;
+    margin-top: 35px;
+}

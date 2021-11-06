@@ -1,0 +1,26 @@
+.info-sec{
+    background-color: black;
+    padding: 4rem 3rem;
+    padding-bottom: 10px;
+}
+.company-info{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.info-head > ul > li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.info-head > p{
+    color: gray;
+    padding-bottom: 30px;
+}
+
+.info-underline{
+    height: 0.02rem;
+    width: 100%;
+    background-color: grey;
+
+}

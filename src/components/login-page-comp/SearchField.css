@@ -1,0 +1,34 @@
+.search-container{
+    display: flex;
+    position: relative;
+}
+
+.inp-field{
+    height: 3.5rem;
+    width: 100%;
+    font-size: 1.3rem;
+    padding-left: 2rem;
+}
+
+.loc-icon{
+    position: absolute;
+    right:10rem;
+    top:0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.inp-field:focus {
+    border: 1px solid #f5740b;
+    outline: none;
+}
+
+
+.btn-search{
+    width: 10rem;
+    border: none;
+    color: white;
+    background-color: #f5740b;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}

@@ -1,0 +1,45 @@
+.heading-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+}
+
+.swiggy-icon{
+    color: #f5740b;
+    font-size: 50px;
+    margin-top: 0.3rem;
+}
+
+.swiggy-heading{
+    display: flex;
+    align-items: center;
+}
+
+.swiggy-heading-text{
+    color: #f5740b;
+    font-size: 35px;
+    margin-left: 3px;
+    font-weight: bold;
+    cursor: inherit;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.heading-btns{
+    height: 35px;
+}
+
+.login-btn, .signup-btn{
+    height: 100%;
+    width: 6rem;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.signup-btn{
+    background-color: black;
+    color: white;
+}

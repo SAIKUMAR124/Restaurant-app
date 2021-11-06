@@ -1,0 +1,29 @@
+.fil-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-right: 2rem;
+    
+}
+
+.fil-count{
+    font-size: 3rem;
+    font-weight: bolder;
+    
+}
+
+.fil-bundle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    font-size: 1.2rem;
+   
+}
+
+.fill{
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}

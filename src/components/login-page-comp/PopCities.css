@@ -1,0 +1,29 @@
+.cities-container{
+    width: 554px;
+    margin-top: 2rem;
+}
+
+.pop-cities{
+    color: grey;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.popular-cities{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.link-cities{
+    padding-right: 16px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.cities-li:nth-child(2n) a{
+    color: rgba(128, 126, 126)
+}
+
+

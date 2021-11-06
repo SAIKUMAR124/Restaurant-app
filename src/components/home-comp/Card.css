@@ -1,0 +1,37 @@
+.card-comp{
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.card-comp:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    border-radius: 4px;
+}
+
+.card-view{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #5a5af7;
+    font-weight: bold;
+    visibility: hidden;
+}
+
+.card-comp:hover .card-view{
+    visibility: visible;
+}
+
+
+
+/* .card-view:hover{ 
+    display: block;
+} */
+
+@media screen and (min-width: 1000px){
+    .card-comp{
+        width: 22%;
+        margin: 0 1rem;
+        margin-bottom: 1.5rem;
+        
+    }
+    
+}

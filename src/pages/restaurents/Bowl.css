@@ -1,0 +1,46 @@
+
+.rest-main{
+    width: 50%;
+    margin: 0 auto;
+    font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+}
+
+.rest-type-head{
+    margin-bottom: 2rem;
+}
+
+.rest-type-items{
+    font-weight: 700;
+    color: grey;
+}
+
+/* .type-underline{
+    border-bottom: 4px solid black;
+    margin-bottom: 2rem;
+} */
+
+.food-info{
+    margin-bottom: 2rem;
+}
+
+.food-item-name{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.food-item-price{
+    margin: 0.8rem 0;
+}
+.food-underline{
+    margin-top: 2rem;
+    border-bottom: 1px solid grey;
+}
+
+.type-underline{
+    border-bottom: 3px solid black;
+    margin-bottom: 2rem;
+}
+
+.food-item-text{
+    color: #a3aab5;
+}

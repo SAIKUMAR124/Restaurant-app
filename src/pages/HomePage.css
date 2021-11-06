@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.link-tag{
+    text-decoration: none;
+    color: black;
+}
+
+.res-img{
+    width: 100%;
+}
+
+.res-title{
+    font-weight: bold;
+    font-size: 5rem;
+    padding: 15px 0;
+}
+
+.res-category{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.category-item{
+    font-size: 3rem;
+    padding-right: 2rem;
+
+}
+
+
+
+.res-bar{
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.res-text-container{
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+}
+
+.res-rating{
+    background-color: #48c479;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+}
+
+.star-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.res-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rupee-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1000px){
+
+    .home-main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .res-title{
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+
+    .category-item{
+        font-size: 1rem;
+        padding-right: 10px;
+    }
+
+    .res-bar{
+        font-size: 1rem;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+
+    .res-text-container{
+        padding: 1rem 10px;
+    }
+
+}

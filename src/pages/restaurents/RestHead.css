@@ -1,0 +1,68 @@
+.rest-head-container{
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.rest-head-img{
+    flex: 1;
+}
+
+.rest-head-name{
+    font-size: 2rem;
+}
+
+.rest-head-items{
+    color: grey;
+    margin-right: 1rem;
+}
+
+.rest-head-info{
+    flex: 2;
+}
+
+.rest-head-offers{
+    flex: 1;
+}
+
+.head-image{
+    width: 250px;
+}
+
+.head-part-3{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.head-part-2{
+    margin: 12px 0; 
+}
+
+.rest-head-rating, .rest-head-d_time, .rest-head-pricee{
+    width: 150px;
+}
+
+.part-3-head{
+    font-size: 1.4rem;
+}
+
+.part-3-text{
+    color: grey;
+}
+
+.rest-head-offers{
+    align-self: center;
+}
+
+.head-offers{
+    margin: 1rem 0;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.off{
+    font-weight: 600;
+    margin: 1rem 0;
+}
