@@ -84,7 +84,6 @@ export const AppProvider = ({ children }) => {
   };
 
   const onAdd = (a) => {
-    console.log(a);
     const exist = cartItems.find((x) => x.id === a.id);
     if (exist) {
       setCartItems(

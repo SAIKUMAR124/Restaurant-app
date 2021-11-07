@@ -3,7 +3,6 @@ import { useGlobalLoginContext } from '../../../../context/LoginContext'
 
 const QuantityButton = ({items}) => {
     const {onAdd, onRemove} = useGlobalLoginContext();
-    console.log(items)
     return (
         <div>
             <div className="cart-price-btn">
