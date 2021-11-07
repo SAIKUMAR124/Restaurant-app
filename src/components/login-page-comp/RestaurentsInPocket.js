@@ -1,12 +1,12 @@
 import React from 'react'
-import './RestaurentsInPocket.css'
+import './RestaurantsInPocket.css'
 
 const RestaurentsInPocket = () => {
     return (
         <div className='resPocket'>
             <div className='resPocInfo'>
-                <h1>Restaurents in your pocket</h1>
-                <p>Order from your favorite restaurents & track on the go, with the all-new Swiggy app.</p>
+                <h1>Restaurants in your pocket</h1>
+                <p>Order from your favorite restaurants & track on the go, with the all-new Swiggy app.</p>
                 <div>
                 <a href='/' className='nav-btns'>
                     <img src='https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp' alt='img' className='google-img' />

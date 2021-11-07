@@ -45,7 +45,7 @@ const HeadingCurosel = () => {
                         )
                 })}
             </div>
-            <h3 className='subtitle'>Order food from favorate restaurents near you.</h3>
+            <h3 className='subtitle'>Order food from favorate restaurants near you.</h3>
         </section>
     )
 }
