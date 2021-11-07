@@ -7,7 +7,7 @@ import RestHead from "./RestHead";
 
 const Restaurents = () => {
   return (
-    <div>
+    <div style={{position: 'relative'}}>
       <RestHead />
       <div className="Restaurent-parts">
         <div className="Restaurent-part1">

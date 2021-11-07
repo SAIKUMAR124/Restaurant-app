@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
 import { useGlobalLoginContext } from "../../../context/LoginContext";
+import QuantityButton from "./comp/QuantityButton";
 import "./RestaurentItemCart.css";
 
 const RestaurentItemCart = () => {
-  const { cartItems, onAdd, onRemove, clearData } = useGlobalLoginContext();
-
-  console.log(cartItems);
+  const { cartItems, clearData } = useGlobalLoginContext();
 
   useEffect(() => {
     clearData();
@@ -25,21 +24,7 @@ const RestaurentItemCart = () => {
               <div key={index} className="cart-items">
                 <div className="cart-item-name">{items.item}</div>
                 <div className="cart-item-container">
-                  <div className="cart-price-btn">
-                    <button
-                      className="cart-item-remove"
-                      onClick={() => onRemove(items)}
-                    >
-                      -
-                    </button>
-                    <div className="cart-item-qty">{items.qty}</div>
-                    <button
-                      className="cart-item-add"
-                      onClick={() => onAdd(items)}
-                    >
-                      +
-                    </button>
-                  </div>
+                    <QuantityButton items={items} />
                 </div>
 
                 <div className="cart-item-price">{items.price}</div>

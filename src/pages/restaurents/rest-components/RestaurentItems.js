@@ -3,11 +3,11 @@ import { useGlobalLoginContext } from "../../../context/LoginContext";
 import { RestRetriveData } from "./RestRetriveData";
 
 const RestaurentItems = () => {
-  const {onAdd} = useGlobalLoginContext();
+  const { onAdd, cartItems } = useGlobalLoginContext();
   const d = RestRetriveData();
   const { data } = d;
   const { food } = data;
-  
+
   return (
     <div>
       <div className="rest-main">
@@ -22,8 +22,8 @@ const RestaurentItems = () => {
                 <h1>{type}</h1>
                 <p className="rest-type-items">{food_item.length} ITEMS</p>
               </div>
-              {food_item.map((a, index) => {
-                const { item, price, item_info } = a;
+              {food_item.map((items, index) => {
+                const { item, price, item_info } = items;
                 const l = food_item.length;
 
                 const border_line = index !== l - 1 ? "food-underline" : "";
@@ -35,13 +35,39 @@ const RestaurentItems = () => {
                       display: "flex",
                     }}
                   >
-                    <div>
-                      <div className="food-item-name">{item}</div>
-                      <div className="food-item-price">{price}</div>
-                      <div className="food-item-text">{item_info}</div>
-                    </div>
-                    <div>
-                      <button onClick={()=> onAdd(a) } >Add to cart</button>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <div style={{ width: "80%" }}>
+                        <div className="food-item-name">{item}</div>
+                        <div className="food-item-price">{price}</div>
+                        <div className="food-item-text">{item_info}</div>
+                      </div>
+                      <div
+                        style={{ 
+                          width: "20%",
+                          alignSelf:'center',
+                          textAlign:'center',
+                          
+                        }}
+                        className="food-item-btn-container"
+                      >
+                        <button
+                         onClick={() => onAdd(items)}
+                         style={{ 
+                           padding:'5px 10px',
+                           color: 'white',
+                           backgroundColor:'green',
+                           border: 'none',
+                           fontWeight: 'bold',
+                          }}
+                        >
+                          Add to cart
+                        </button>
+                      </div>
                     </div>
                     <div className={border_line}></div>
                   </div>

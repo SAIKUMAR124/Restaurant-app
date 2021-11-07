@@ -16,6 +16,7 @@
 
 .rest-main{
     font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+    /* margin-top: 230px; */
 }
 
 .rest-type-head{
@@ -57,3 +58,11 @@
 .food-item-text{
     color: #a3aab5;
 }
+
+/* .food-item-btn-container{
+    width: 200px;
+}
+
+.food-item-btn-container > button{
+    width: 100%;
+} */
