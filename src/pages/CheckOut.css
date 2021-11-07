@@ -34,3 +34,38 @@
 .success-con{
     text-align: center;
 }
+
+.success-address{
+    width: 40vw;
+    padding: 2rem 2rem;
+    margin: 3rem auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.success-ord-add{
+    margin-top: 2rem;
+}
+
+.success-address>button{
+    width: 100%;
+    height: 3rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: orange;
+    border: none;
+
+}
+
+.success-add-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.success-add-container > div{
+    text-align: start;
+}
+
+.success-add-container > div > h2{
+    padding-bottom: 1.5rem;
+}
