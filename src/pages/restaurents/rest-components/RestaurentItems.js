@@ -31,9 +31,6 @@ const RestaurentItems = () => {
                   <div
                     key={index}
                     className="food-info"
-                    style={{
-                      display: "flex",
-                    }}
                   >
                     <div
                       style={{
@@ -47,22 +44,21 @@ const RestaurentItems = () => {
                         <div className="food-item-text">{item_info}</div>
                       </div>
                       <div
-                        style={{ 
+                        style={{
                           width: "20%",
-                          alignSelf:'center',
-                          textAlign:'center',
-                          
+                          alignSelf: "center",
+                          textAlign: "center",
                         }}
                         className="food-item-btn-container"
                       >
                         <button
-                         onClick={() => onAdd(items)}
-                         style={{ 
-                           padding:'5px 10px',
-                           color: 'white',
-                           backgroundColor:'green',
-                           border: 'none',
-                           fontWeight: 'bold',
+                          onClick={() => onAdd(items)}
+                          style={{
+                            padding: "5px 10px",
+                            color: "white",
+                            backgroundColor: "green",
+                            border: "none",
+                            fontWeight: "bold",
                           }}
                         >
                           Add to cart
