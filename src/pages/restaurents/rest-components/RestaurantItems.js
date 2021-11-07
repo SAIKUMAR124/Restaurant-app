@@ -3,7 +3,7 @@ import { useGlobalLoginContext } from "../../../context/LoginContext";
 import { RestRetriveData } from "./RestRetriveData";
 import {BiRupee} from 'react-icons/bi';
 
-const RestaurentItems = () => {
+const RestaurantItems = () => {
   const { onAdd } = useGlobalLoginContext();
   const d = RestRetriveData();
   const { data } = d;
@@ -75,4 +75,4 @@ const RestaurentItems = () => {
   );
 };
 
-export default RestaurentItems;
+export default RestaurantItems;

@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { useGlobalLoginContext } from "../../../context/LoginContext";
 import QuantityButton from "./comp/QuantityButton";
 import {BiRupee} from 'react-icons/bi';
-import "./RestaurentItemCart.css";
+import "./RestaurantItemCart.css";
 import { Redirect } from "react-router";
 
-const RestaurentItemCart = () => {
+const RestaurantItemCart = () => {
   const { cartItems } = useGlobalLoginContext();
   const [checkout, setCheckout] = useState(false);
 
@@ -50,4 +50,4 @@ const RestaurentItemCart = () => {
   );
 };
 
-export default RestaurentItemCart;
+export default RestaurantItemCart;

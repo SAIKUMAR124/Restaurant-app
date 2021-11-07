@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useFormik } from "formik";
-import RestaurentItemCart from "./restaurents/rest-components/RestaurentItemCart";
+import RestaurantItemCart from "./restaurents/rest-components/RestaurantItemCart";
 import "./CheckOut.css";
 import { useGlobalLoginContext } from "../context/LoginContext";
 import { Redirect } from "react-router";
@@ -106,7 +106,7 @@ const CheckOut = () => {
         </form>
       </div>
       <div className="checkout-part2">
-        <RestaurentItemCart />
+        <RestaurantItemCart />
       </div>
     </div>
   );

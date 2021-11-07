@@ -1,16 +1,16 @@
-.Restaurent-parts{
+.Restaurant-parts{
     display: flex;
 }
 
-.Restaurent-part1{
+.Restaurant-part1{
     flex: 1;
 }
 
-.Restaurent-part2{
+.Restaurant-part2{
     flex: 2;
 }
 
-.Restaurent-part3{
+.Restaurant-part3{
     flex: 1;
 }
 
