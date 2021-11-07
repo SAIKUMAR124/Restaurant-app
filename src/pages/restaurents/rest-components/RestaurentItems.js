@@ -1,6 +1,7 @@
 import React from "react";
 import { useGlobalLoginContext } from "../../../context/LoginContext";
 import { RestRetriveData } from "./RestRetriveData";
+import {BiRupee} from 'react-icons/bi';
 
 const RestaurentItems = () => {
   const { onAdd, cartItems } = useGlobalLoginContext();
@@ -28,10 +29,7 @@ const RestaurentItems = () => {
 
                 const border_line = index !== l - 1 ? "food-underline" : "";
                 return (
-                  <div
-                    key={index}
-                    className="food-info"
-                  >
+                  <div key={index} className="food-info">
                     <div
                       style={{
                         display: "flex",
@@ -40,7 +38,7 @@ const RestaurentItems = () => {
                     >
                       <div style={{ width: "80%" }}>
                         <div className="food-item-name">{item}</div>
-                        <div className="food-item-price">{price}</div>
+                        <div className="food-item-price"><span><BiRupee className='food-price-icon' />{price}</span></div>
                         <div className="food-item-text">{item_info}</div>
                       </div>
                       <div
@@ -55,9 +53,9 @@ const RestaurentItems = () => {
                           onClick={() => onAdd(items)}
                           style={{
                             padding: "5px 10px",
-                            color: "white",
-                            backgroundColor: "green",
-                            border: "none",
+                            color: "green",
+                            backgroundColor: "white",
+                            border: "1px solid grey",
                             fontWeight: "bold",
                           }}
                         >

@@ -54,6 +54,11 @@
     align-self: center;
     padding-left: 2rem;
 }
+.cart-item-price>span{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
 
 .cart-title{
     font-size: 2.5rem;
@@ -93,6 +98,12 @@
     font-weight: bold;
     font-size: 1.3rem;
     border: none;
-    background-color: green;
+    background-color: orange;
     color: white;
+}
+
+.subtotal-price{
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }

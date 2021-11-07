@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useGlobalLoginContext } from "../../../context/LoginContext";
 import QuantityButton from "./comp/QuantityButton";
+import {BiRupee} from 'react-icons/bi';
 import "./RestaurentItemCart.css";
 
 const RestaurentItemCart = () => {
@@ -29,14 +30,14 @@ const RestaurentItemCart = () => {
                     <QuantityButton items={items} />
                 </div>
 
-                <div className="cart-item-price">{items.qty * items.price}</div>
+                <div className="cart-item-price"><span><BiRupee/>{items.qty * items.price}</span></div>
               </div>
             );
           })}
           </div>
           <div className="cart-middle-container">
             <div>Subtotal</div>
-            <div>{itemsPrice}</div>
+            <div className='subtotal-price'><BiRupee/>{itemsPrice}</div>
           </div>
           <div className="cart-extra">Extra charges may apply</div>
 

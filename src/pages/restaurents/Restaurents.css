@@ -44,6 +44,14 @@
 
 .food-item-price{
     margin: 0.8rem 0;
+    align-items: center;
+}
+.food-item-price>span{
+    display: flex;
+    justify-content: start;
+}
+.food-price-icon{
+    font-size: 1.2rem;
 }
 .food-underline{
     margin-top: 2rem;
