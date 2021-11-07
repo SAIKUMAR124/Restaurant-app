@@ -8,7 +8,7 @@ import PageNotFound from "./pages/PageNotFound";
 import Ahmedabad from "./pages/popular-cities/Ahmedabad";
 import Bangalore from "./pages/popular-cities/Bangalore";
 import Chennai from "./pages/popular-cities/Chennai";
-import Restaurents from "./pages/restaurents/Restaurents";
+import Restaurants from "./pages/restaurents/Restaurants";
 
 const MainPage = () => {
   return (
@@ -20,7 +20,7 @@ const MainPage = () => {
           <Route exact path="/ahmedabad" component={Ahmedabad} />
           <Route exact path="/bangalore" component={Bangalore} />
           <Route exact path="/Chennai" component={Chennai} />
-          <Route path="/home/:url" component={Restaurents} />
+          <Route path="/home/:url" component={Restaurants} />
           <Route path='/checkout' component={CheckOut} />
           <Route path='/success' component={OrderSuccess} />
           <Route component={PageNotFound} />

@@ -1,9 +1,9 @@
-export const Restaurent = [
+export const Restaurant = [
   {
     id: 1,
     url: "zomoz",
     data: {
-      restaurent: "Zomoz - the Momo Comapny",
+      Restaurant: "Zomoz - the Momo Comapny",
       title: ["Street Food", "Fast Food", "Asian", "Tibetan", "Chinese"],
       img_url:
         "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/jnbznyjiajkmb5rqkkne",
@@ -81,7 +81,7 @@ export const Restaurent = [
     id: 2,
     url: "bowl",
     data: {
-      restaurent: "The Bowl Company",
+      Restaurant: "The Bowl Company",
       title: [
         "Continental",
         "North Indian",
@@ -194,7 +194,7 @@ export const Restaurent = [
     id: 3,
     url: "ks-bakers",
     data: {
-      restaurent: "KS Bakers",
+      Restaurant: "KS Bakers",
       title: ["Bakery", "Pizzas", "Desserts", "Snacks", "Fast Food"],
       img_url:
         "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/dfvixdi2gwfvc6qkyy70",
@@ -271,7 +271,7 @@ export const Restaurent = [
     id: 4,
     url: "makers",
     data: {
-      restaurent: "Makers of Milkshakes",
+      Restaurant: "Makers of Milkshakes",
       title: ["Desserts", "Beverages"],
       img_url:
         "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/a4sxybgzksg111w1ukyv",
@@ -348,7 +348,7 @@ export const Restaurent = [
     id: 5,
     url: "pista",
     data: {
-      restaurent: "Pista House Restaurant",
+      Restaurant: "Pista House Restaurant",
       title: [
         "Biryani",
         "North Indian",

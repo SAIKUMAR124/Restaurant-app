@@ -1,12 +1,12 @@
 import React, { useContext, useState } from "react";
-import { Restaurent } from "../data/RestaurentData";
+import { Restaurant } from "../data/RestaurantData";
 
 const AppContext = React.createContext();
 
 export const AppProvider = ({ children }) => {
   const [login, setLogin] = useState(false);
   const [signup, setSignup] = useState(false);
-  const [rest, setRest] = useState(Restaurent);
+  const [rest, setRest] = useState(Restaurant);
   const [cartItems, setCartItems] = useState([]);
   const [address, setAddress] = useState({});
 

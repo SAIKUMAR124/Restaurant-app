@@ -1,6 +1,6 @@
 import React from 'react'
 
-const RestaurentItemNav = () => {
+const RestaurantItemNav = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const RestaurentItemNav = () => {
     )
 }
 
-export default RestaurentItemNav
+export default RestaurantItemNav
