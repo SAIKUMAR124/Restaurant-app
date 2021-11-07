@@ -1,9 +1,15 @@
 import React from "react";
+import { Redirect, useHistory } from "react-router";
 import { useGlobalLoginContext } from "../context/LoginContext";
 
 const OrderSuccess = () => {
   const { address } = useGlobalLoginContext();
   const { doorNo, lankMark, village, pinCode } = address;
+  const history = useHistory();
+
+  const handleContinue=()=>{
+    history.push('/home');
+  }
 
   return (
     <div className="success-con">
@@ -28,7 +34,7 @@ const OrderSuccess = () => {
             <h2>{pinCode}</h2>
           </div>
         </div>
-        <button>Continue</button>
+        <button onClick={handleContinue}>Continue</button>
       </div>
     </div>
   );
