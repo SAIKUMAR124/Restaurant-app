@@ -13,7 +13,6 @@ const HomePage = () => {
 
   return (
     <div>
-      <h1>Welcome {userId}</h1>
       <FilterHead />
       <div className="home-main">
         {rest.map((item, index) => {
