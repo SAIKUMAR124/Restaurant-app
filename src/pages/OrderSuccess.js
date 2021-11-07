@@ -1,5 +1,5 @@
 import React from "react";
-import { Redirect, useHistory } from "react-router";
+import {  useHistory } from "react-router";
 import { useGlobalLoginContext } from "../context/LoginContext";
 
 const OrderSuccess = () => {

@@ -8,7 +8,7 @@ import { useGlobalLoginContext } from "../context/LoginContext";
 import "./HomePage.css";
 
 const HomePage = () => {
-  const { userId, rest } = useGlobalLoginContext();
+  const { rest } = useGlobalLoginContext();
   const history = useHistory();
 
   return (
