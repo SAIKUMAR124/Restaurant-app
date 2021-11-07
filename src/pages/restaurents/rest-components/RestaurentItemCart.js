@@ -6,6 +6,8 @@ import "./RestaurentItemCart.css";
 const RestaurentItemCart = () => {
   const { cartItems, clearData } = useGlobalLoginContext();
 
+  const itemsPrice = cartItems.reduce((a,c) => a+c.price * c.qty, 0);
+
   useEffect(() => {
     clearData();
   }, []);
@@ -27,14 +29,14 @@ const RestaurentItemCart = () => {
                     <QuantityButton items={items} />
                 </div>
 
-                <div className="cart-item-price">{items.price}</div>
+                <div className="cart-item-price">{items.qty * items.price}</div>
               </div>
             );
           })}
           </div>
           <div className="cart-middle-container">
             <div>Subtotal</div>
-            <div>price</div>
+            <div>{itemsPrice}</div>
           </div>
           <div className="cart-extra">Extra charges may apply</div>
 
