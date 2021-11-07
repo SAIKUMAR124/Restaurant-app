@@ -48,7 +48,7 @@
 }
 .food-item-price>span{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 }
 .food-price-icon{
     font-size: 1.2rem;

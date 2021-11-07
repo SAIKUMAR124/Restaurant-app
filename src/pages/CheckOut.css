@@ -1,0 +1,36 @@
+.checkout-part1{
+    width: 60%;
+    padding: 5rem 15rem;
+}
+.checkout-part2{
+    width: 40%;
+}
+
+.checkout-container{
+    display: flex;
+    
+}
+
+.inp-field-checkout{
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+    padding-left: 1rem;
+}
+
+.checkout-submit{
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+    color: white;
+    background-color: orange;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* Success Css */
+.success-con{
+    text-align: center;
+}

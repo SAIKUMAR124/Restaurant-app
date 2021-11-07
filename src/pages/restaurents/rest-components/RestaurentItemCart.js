@@ -1,17 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import { useGlobalLoginContext } from "../../../context/LoginContext";
 import QuantityButton from "./comp/QuantityButton";
 import {BiRupee} from 'react-icons/bi';
 import "./RestaurentItemCart.css";
+import { Redirect } from "react-router";
 
 const RestaurentItemCart = () => {
-  const { cartItems, clearData } = useGlobalLoginContext();
+  const { cartItems } = useGlobalLoginContext();
+  const [checkout, setCheckout] = useState(false);
 
   const itemsPrice = cartItems.reduce((a,c) => a+c.price * c.qty, 0);
 
-  useEffect(() => {
-    clearData();
-  }, []);
 
   return (
     <aside className="cart-container">
@@ -41,7 +40,8 @@ const RestaurentItemCart = () => {
           </div>
           <div className="cart-extra">Extra charges may apply</div>
 
-          <button className="cart-checkout">CHECKOUT</button>
+          <button className="cart-checkout" onClick={()=>setCheckout(true)}>CHECKOUT</button>
+          {checkout && <Redirect to='/checkout' />}
         </div>
       ) : (
         <h1>Empty Cart</h1>

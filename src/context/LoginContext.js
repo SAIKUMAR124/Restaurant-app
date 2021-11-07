@@ -8,6 +8,7 @@ export const AppProvider = ({ children }) => {
   const [signup, setSignup] = useState(false);
   const [rest, setRest] = useState(Restaurent);
   const [cartItems, setCartItems] = useState([]);
+  const [address, setAddress] = useState({});
 
   const handleLogin = () => {
     setLogin(!login);
@@ -112,6 +113,10 @@ export const AppProvider = ({ children }) => {
     setCartItems([])
   }
 
+  const handleAddress=(place)=>{
+    setAddress(place)
+  }
+
   return (
     <AppContext.Provider
       value={{
@@ -129,6 +134,8 @@ export const AppProvider = ({ children }) => {
         cartItems,
         onRemove,
         clearData,
+        address,
+        handleAddress,
       }}
     >
       {children}

@@ -4,7 +4,7 @@ import { RestRetriveData } from "./RestRetriveData";
 import {BiRupee} from 'react-icons/bi';
 
 const RestaurentItems = () => {
-  const { onAdd, cartItems } = useGlobalLoginContext();
+  const { onAdd } = useGlobalLoginContext();
   const d = RestRetriveData();
   const { data } = d;
   const { food } = data;

@@ -1,7 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import CheckOut from "./pages/CheckOut";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
+import OrderSuccess from "./pages/OrderSuccess";
 import PageNotFound from "./pages/PageNotFound";
 import Ahmedabad from "./pages/popular-cities/Ahmedabad";
 import Bangalore from "./pages/popular-cities/Bangalore";
@@ -19,7 +21,8 @@ const MainPage = () => {
           <Route exact path="/bangalore" component={Bangalore} />
           <Route exact path="/Chennai" component={Chennai} />
           <Route path="/home/:url" component={Restaurents} />
-          
+          <Route path='/checkout' component={CheckOut} />
+          <Route path='/success' component={OrderSuccess} />
           <Route component={PageNotFound} />
         </Switch>
       </BrowserRouter>
